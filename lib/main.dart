@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:primerxamen1miguelc/providers/libros_provider.dart';
+import 'package:primerxamen1miguelc/core/libros_core.dart';
 import 'package:primerxamen1miguelc/screens/lista_libros_screen.dart';
-import 'package:provider/provider.dart';
+import 'package:core/core.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Stephen King Library',
         theme: ThemeData(
-          primarySwatch: Colors.teal,
+          primarySwatch: Colors.green,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Stephen King Libreria'),
+            title: Text('Libreria de Stephen King'),
           ),
           body:
               BookListScreen(), // Ensure bookListScreen is embedded within a Material widget
