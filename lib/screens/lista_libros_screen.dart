@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:primerexamen1_miguelc/providers/libros_provider.dart';
+import 'package:primerxamen1miguelc/providers/libros_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'detalle_libros_screen.dart';
@@ -21,7 +21,7 @@ class _BookListScreenState extends State<BookListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Libros'),
+        title: Text('Lista Libros'),
       ),
       body: Consumer<BookListProvider>(
         builder: (context, bookListProvider, child) {
