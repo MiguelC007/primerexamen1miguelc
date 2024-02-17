@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:primerxamen1miguelc/core/libros_core.dart';
+import 'package:primerxamen1miguelc/core/libros_provider.dart';
 import 'package:primerxamen1miguelc/screens/lista_libros_screen.dart';
-import 'package:core/core.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
