@@ -1,18 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:primerexamen1_miguelc/core/libros_core.dart';
+import 'package:primerexamen1_miguelc/screens/lista_libros_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Primer Examen!'),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => BookListProvider()),
+      ],
+      child: MaterialApp(
+        title: 'Stephen King Library',
+        theme: ThemeData(
+          primarySwatch: Colors.teal,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('Stephen King Libreria'),
+          ),
+          body:
+              BookListScreen(), // Ensure bookListScreen is embedded within a Material widget
         ),
       ),
     );
