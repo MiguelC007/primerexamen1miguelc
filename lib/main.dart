@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:primerexamen1_miguelc/core/libros_core.dart';
-import 'package:primerexamen1_miguelc/screens/lista_libros_screen.dart';
+import 'package:primerxamen1_miguelc/libros_provider.dart';
+import 'package:primerxamen1_miguelc/screens/lista_libros_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {

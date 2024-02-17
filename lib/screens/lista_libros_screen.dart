@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:primerexamen1_miguelc/core/libros_core.dart';
+import 'package:primerexamen1_miguelc/providers/libros_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'detalle_libros_screeen.dart';
+import 'detalle_libros_screen.dart';
 
 class BookListScreen extends StatefulWidget {
   @override
