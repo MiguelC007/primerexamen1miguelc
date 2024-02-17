@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:primerxamen1miguelc/providers/libros_provider.dart';
+import 'package:primerxamen1miguelc/core/libros_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'detalle_libros_screen.dart';
@@ -21,7 +21,7 @@ class _BookListScreenState extends State<BookListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista Libros'),
+        title: Text('Lista de Libros'),
       ),
       body: Consumer<BookListProvider>(
         builder: (context, bookListProvider, child) {
@@ -36,7 +36,7 @@ class _BookListScreenState extends State<BookListScreen> {
                 title: Text(book.title),
                 subtitle: Text(book.description),
                 leading: Image.network(
-                  'https://mewmagazine.es/wp-content/uploads/2020/06/mientras-escribo-1-768x1165.jpg',
+                  'https://m.media-amazon.com/images/I/81cgRAAM4KL._SL1500_.jpg',
                   width: 50,
                   height: 50,
                   fit: BoxFit.cover,

@@ -17,15 +17,15 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Stephen King Library',
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.teal,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Libreria de Stephen King'),
+            title: Text('Stephen King Libreria'),
           ),
           body:
-              BookListScreen(), // Ensure bookListScreen is embedded within a Material widget
+              BookListScreen(), 
         ),
       ),
     );
